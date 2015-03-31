@@ -1,0 +1,16 @@
+<script>
+ (function() {
+   var answer = '4';
+   var guess = prompt('Guess a card between 2-A. Ace is high!');
+
+   while (true) {
+     if (guess === answer) {
+       alert('You are correct! Good job.');
+       break;
+     } else if (guess !== answer) {
+       guess = prompt('Not quite. Guess again.');
+     }
+   }
+   alert('Congrats! You got it!');
+ })();
+</script>
