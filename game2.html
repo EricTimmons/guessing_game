@@ -1,7 +1,7 @@
 <script>
  (function() {
    var answer = '4';
-   var guess = prompt('Guess a card between 2-A. Ace is high!');
+   var guess = prompt('Guess a number between 1-10');
 
    while (true) {
      if (guess === answer) {
@@ -14,3 +14,32 @@
    alert('Congrats! You got it!');
  })();
 </script>
+
+
+/*
+<script>
+  (function() {
+    var answer = 42;
+    guess = Number.parseInt(guess)
+    var guess = prompt('What\'s the answer?');
+    while (true) {
+      if (guess === answer) {
+        alert('You got it, congrats!');
+        break;
+      } else if (guess < answer) {
+        guess = Number.parseInt(prompt('Too low, guess again!'));
+      } else if (guess > answer) {
+        guess = Number.parseInt(prompt('Too high, try again!'));
+      } else if (isNaN(guess) === true) {
+          if (guess.length === 42) {
+            guess = Number.parseInt(prompt('You have the right amount of characters, but not quite what we are looking for..'));
+          } else {
+            guess = Number.parseInt(prompt('That\'s not even a number... Try again.'));
+          }
+      }
+    };
+    alert('Congrats, you won!');
+
+  })();
+</script>
+*/
