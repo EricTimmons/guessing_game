@@ -2,3 +2,7 @@
 
 
 // game.html is a prototype game for guessing a certain card out of a deck of 52 cards. Still a WIP.
+
+Pair work updates:
+-added quit feature
+-added answer reveal
