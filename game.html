@@ -15,24 +15,26 @@
           break;
       }
       else {
-          for (var i = c; i > 0; i--) {
-            window.counter = i;
-            guess = prompt('Not quite. You have ' + window.counter + ' guesses left! Guess again.', 'Type \'quit\' to give up');
-            if (i === 0) {
+          for (var i = 9; i > 0; i--) {
+            counter = i;
+            guess = prompt('Not quite. You have ' + counter + ' guesses left! Guess again.', 'Type \'quit\' to give up');
+            if (i === 1) {
               alert('You suck, haha.');
               break;
             }
           }
       } break;
     }
-    var Game = function(name) {
+// this was all working up until this point. I'm not sure how to implement the constructor with my counter.
+// I blame kittens...
+ /*   var Game = function(name) {
       this.name = name
       this.setCounter = function(name) {
         this.name = name;
       }
     }
     window.c = new Game();
-    window.c.setCounter(9);
+    window.c.setCounter(9);*/
 })();
 </script>
 
