@@ -6,3 +6,7 @@
 Pair work updates:
 -added quit feature
 -added answer reveal
+
+// APRIL 01, 2015 ~~~
+
+// working on adding a constructor to the program but I am having a lot of trouble. This is what I have so far It was working with the counter but I cant figure out what I'm doing wrong. I have run it by classmates but it seems we cannot figure out the issue. PLSHALP

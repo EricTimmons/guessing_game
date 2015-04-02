@@ -4,19 +4,36 @@
     var rand = deck[Math.floor(Math.random() * deck.length)];
 
     var guess = prompt('Pick a card with a suit. (eg. 2s for 2spades)', 'Type \'quit\' to give up').toLowerCase();
-    var answer = rand;
+
     while (true) {
-      if (guess === answer) {
-        prompt('Congrats! You got it.');
-        break;
-      } else if (guess === 'quit') {
-        alert('No one likes a quitter. The answer was ' + answer);
-        break;
-      } else if (guess !== answer) {
-        guess = prompt('Not quite. Guess again.', 'Type \'quit\' to give up');
+      if (guess === rand) {
+          prompt('Congrats! You got it.');
+          break;
+      }
+      else if (guess === 'quit') {
+          alert('No one likes a quitter. The answer was ' + rand);
+          break;
+      }
+      else {
+          for (var i = c; i > 0; i--) {
+            window.counter = i;
+            guess = prompt('Not quite. You have ' + window.counter + ' guesses left! Guess again.', 'Type \'quit\' to give up');
+            if (i === 0) {
+              alert('You suck, haha.');
+              break;
+            }
+          }
+      } break;
+    }
+    var Game = function(name) {
+      this.name = name
+      this.setCounter = function(name) {
+        this.name = name;
       }
     }
-
-    // small change
+    window.c = new Game();
+    window.c.setCounter(9);
 })();
 </script>
+
+
