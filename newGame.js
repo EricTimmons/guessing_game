@@ -10,7 +10,7 @@
   Game.prototype.makeGuess = function(){
     this.max--;
     return this.guess;
-  }
+  };
 
   var game = new Game();
 
@@ -18,11 +18,8 @@
     e.preventDefault();
     pick = ['two','three','four','five','six','seven','eight','nine','ten','jack','queen','king','ace'];
     rand = pick[Math.floor(Math.random() * pick.length)];
-  })
-  // for (var i = 9; i >= 0; i--) {
-  //   elClock = 9;
-  //   elClock--;
-  // }
+  });
+
   elSubmit.addEventListener('click', function checkGuesses(e) {
     e.preventDefault();
     if (game.max === 0) {
@@ -32,5 +29,5 @@
     } else {
       game.makeGuess();
       elMessages.innerHTML = ('Not quite, try again.' + ' ' + game.max + ' tries left!');
-    }
-  })
+    };
+  });
