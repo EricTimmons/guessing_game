@@ -5,17 +5,19 @@
   <title>Pick A Card!</title>
 </head>
 <body>
-  <label for="cardValue"><h3>Value</h3></label>
-  <input type="text" id="cardValue" name="cardValue" placeholder="Pick a Value">
-  <button id="submit" type="submit"><h3>Submit Guess</h3></button>
-  <article>
-    <h4>The Rules:</h4>
-      <ol>
-        <li>Pick a card value, Two through Ace.</li>
-        <li>Select <em>submit guess</em> to see if you got the right answer!</li>
-      </ol>
-      <p id="messages">Get ready to play!</p>
-  </article>
+  <header>
+    <h3>The Rules:</h3>
+    <ol>
+      <li>Pick a card value, Two through Ace.</li>
+      <li>Select <em>submit guess</em> to see if you got the right answer!</li>
+    </ol>
+    <p id="messages">Get ready to play!</p>
+  </header>
+  <section>
+    <label for="cardValue"><h3>Value</h3></label>
+    <input type="text" id="cardValue" name="cardValue" placeholder="Pick a Value">
+    <button id="submit" type="submit"><h3>Submit Guess</h3></button>
+  </section>
   <script src="newGame.js"></script>
 </body>
 </html>
